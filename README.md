@@ -28,4 +28,38 @@ Unofficial and incomplete - logging Digico SD series OSC and other network stuff
   
   
 # OSC Packets Sent by Console
-(Tested on SD10)
+(Tested on SD10, these are the OSC packets that are sent when using the "Digico Pad" connection type in External Settings)
+
+## Control Groups
+
+For the following examples, change "1" in the address to be whatever number you need. 
+
+Fader Level
+
+         /Control_Groups/1/fader
+         float with current fader level
+         
+Channel Level Within Control Group
+
+         /Input_Channels/1/CGs_level
+         float with level of given channel within a control group
+         
+Control Group Mute
+
+         /Control_Groups/1/mute
+         float with 1 or 0 (mute on or mute off)
+         
+Control Group Solo
+
+         /Control_Groups/1/solo
+         float with 1 or 0 (solo on or solo off)
+
+## Snapshots
+         
+Current Snapshot Number
+
+         /Snapshots/Current_Snapshot
+        int with snapshot number
+        
+(more soon)
+
